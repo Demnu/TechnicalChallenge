@@ -40,12 +40,11 @@ const PairSpores: FunctionComponent<PropsWithChildren<PairSporesProps>> = ({
         if (isNaN(number)) {
           setError(true);
           setErrorMessage("The format of the input must be [1,2,3,4,5,6]");
-
           throw Error;
         }
-        setAnsweredInput(arrayInput);
-        setAnswer(pairSpores(sporeIdArray));
       });
+      setAnsweredInput(arrayInput);
+      setAnswer(pairSpores(sporeIdArray));
     } catch (error) {
       setError(true);
     }
