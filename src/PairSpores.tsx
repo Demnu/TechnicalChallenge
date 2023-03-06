@@ -43,8 +43,10 @@ const PairSpores: FunctionComponent<PropsWithChildren<PairSporesProps>> = ({
           throw Error;
         }
       });
-      setAnsweredInput(arrayInput);
-      setAnswer(pairSpores(sporeIdArray));
+      if (!error) {
+        setAnsweredInput(arrayInput);
+        setAnswer(pairSpores(sporeIdArray));
+      }
     } catch (error) {
       setError(true);
     }
