@@ -11,7 +11,7 @@ const PairSpores: FunctionComponent<PropsWithChildren<PairSporesProps>> = ({
     [10, 20, 20, 10, 10, 30, 50, 10, 20],
     [4, 3, 2, 1],
   ];
-  const [showTestCases, setShowTestCases] = useState(false);
+  const [showTestCases, setShowTestCases] = useState(true);
   const [answer, setAnswer] = useState(-1);
   const [arrayInput, setArrayInput] = useState("");
   const [answeredInput, setAnsweredInput] = useState("");
@@ -116,6 +116,8 @@ const PairSpores: FunctionComponent<PropsWithChildren<PairSporesProps>> = ({
                     setError(false);
                     setErrorMessage("");
                     setArrayInput(JSON.stringify(array));
+                    setAnsweredInput(JSON.stringify(array));
+                    setAnswer(pairSpores(array));
                   }}
                   className=" text-blue-500 hover:underline"
                 >

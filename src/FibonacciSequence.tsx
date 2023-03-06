@@ -7,7 +7,7 @@ const FibonacciSequence: FunctionComponent<
   PropsWithChildren<FibonacciSequenceProps>
 > = ({ goBackClickHandler }) => {
   let fiboTests: number[] = [8, 15, 31];
-  const [showTestCases, setShowTestCases] = useState(false);
+  const [showTestCases, setShowTestCases] = useState(true);
   const [input, setInput] = useState(2);
   const [answeredInput, setAnsweredInput] = useState(0);
   const [error, setError] = useState(false);
@@ -91,6 +91,8 @@ const FibonacciSequence: FunctionComponent<
                   onClick={() => {
                     setError(false);
                     setInput(value);
+                    setAnsweredInput(value);
+                    setAnswer(fibo(value));
                   }}
                   className=" text-blue-500 hover:underline"
                 >
