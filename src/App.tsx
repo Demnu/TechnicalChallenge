@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <div className="bg-darkerblue p-2 flex justify-center text-white mt-3 mb-5">
-        <h1 className="text-4xl font-bold">Bioscout Technical Challenge!</h1>
+        <h1 className="text-4xl font-bold">BioScout Technical Challenge!</h1>
       </div>
       <section>
         {showQuestion1 === false && showQuestion2 === false && (
