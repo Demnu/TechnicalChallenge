@@ -1,5 +1,5 @@
 The application can be accessed through this link:
-https://effortless-souffle-4819d4.netlify.app/
+https://statuesque-creponne-95b429.netlify.app/
 
 The coding questions can be found in the folder src/CodingQuestions
 
